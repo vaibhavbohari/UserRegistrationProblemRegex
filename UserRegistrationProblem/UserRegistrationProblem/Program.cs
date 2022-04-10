@@ -7,12 +7,14 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
+            
+            Console.WriteLine("Enter last name");
             string inStr = Console.ReadLine();
 
-            //Create pattern for firstname
-            string firstName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
+            // Create pattren for Lastname
+            string lastName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
 
-            Regex regex = new Regex(firstName);
+            Regex regex = new Regex(lastName);
             Console.WriteLine(regex.IsMatch(inStr));
         }
     }
